@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--大小
+        height：高度值。
+        width：宽度值。
+    -->
+    <size
+        android:height="100dp"
+        android:width="100dp"/>
+
+    <!--内部填充色
+        color：颜色色值。
+    -->
+    <solid
+        android:color="#FFFFFF" />
+
+    <!--边框
+        color：边框颜色。
+        width：边框宽度。
+        dashGap：虚线的间隔。
+        dashWidth：虚线宽度。
+        如果不设置dashGap，dashWidth默认是实线。
+    -->
+    <stroke
+        android:color="#DEDEDE"
+        android:width="1dp"
+        android:dashGap="5dp"
+        android:dashWidth="2dp"/>
+
+    <!--圆角
+        radius：设置四角半径。
+        bottomLeftRadius：左下角半径。
+        bottomRightRadius：右下角半径。
+        topLeftRadius：左上角半径。
+        topRightRadius：右上角半径。
+    -->
+    <corners
+        android:radius="5dp"
+        android:bottomLeftRadius="5dp"
+        android:bottomRightRadius="5dp"
+        android:topLeftRadius="5dp"
+        android:topRightRadius="5dp"/>
+
+    <!--颜色渐变
+        angle：integer类型，渐变角度，0表示从左到右，90表示从下到上，必须是45的整数倍，默认0。
+        startColor：开启渐变颜色。
+        endColor：结束渐变颜色。
+        centerColor：中间渐变颜色。
+        centerX：float(0 ~ 1.0) 相对X的渐变位置。
+        centerY：float(0 - 1.0) 相对Y的渐变位置。
+        gradientRadius：float类型，渐变颜色的半径，单位应该是像素点。需要android:type="radial"。如果没有设置android:gradientRadius，将会报错，error inflating class。
+        type：渐变类型：
+            linear：线性渐变，可以理解为y=kx+b。
+            radial：圆形渐变，起始颜色从cenralX,centralY点开始。
+            sweep：扫线梯度渐变。
+    -->
+    <gradient
+        android:angle="0"
+        android:startColor="#FFFFFF"
+        android:endColor="#FF00FF00"
+        android:centerColor="#00FFFF"
+        android:centerX="0.5"
+        android:centerY="0.5"
+        android:gradientRadius="20"
+        android:type="radial" />
+
+    <!--内间距
+        bottom：距离底部内间距。
+        left：距离左边内间距。
+        right：距离右侧内间距。
+        top：距离顶部内间距。
+    -->
+    <padding
+        android:bottom="5dp"
+        android:left="5dp"
+        android:right="5dp"
+        android:top="5dp"/>
+
+</shape>
